@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+class student
+{
+	private:
+		int roll;
+		char name[10];
+    public:
+    	void insert()
+    	{
+    		cout<<"Enter name\n";
+    		cin>>name;
+    		cout<<"Enter roll no\n";
+    		cin>>roll;
+    		
+		}
+		void disp()
+		{
+			cout<<roll<<name;
+		}
+};
+main()
+{
+	student s1;
+	s1.insert();
+	s1.disp();
+	
+}
